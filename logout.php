@@ -1,8 +1,15 @@
 <?php
 session_start();
 
+
+function pathTo($destination){
+    echo "<script>window.location.href='$destination.php'</script>";
+
+}
+
 $_SESSION['status'] = 'invalid';
 
-unset($_SESSION['username']); 
+unset($_SESSION['username']);
 
-echo "<script>window.location.href='login.php'</script>";
+pathTo('login');
+?>

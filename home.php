@@ -1,12 +1,7 @@
 <?php
-    // session_start();
     require ('session.php');
 
-    // echo $_SESSION['username'];
-
-
 ?>
-
 
 
 <!DOCTYPE html>
@@ -17,12 +12,11 @@
     <title>HOME</title>
 </head>
 <body>
-    <div class="main">
-        <h1>WELCOME TO HOME</h1>
-    </div>
 
+    <h1>WELCOME TO HOME</h1>
     <form action="logout.php" method="post">
         <input type="submit" value="LOGOUT">
     </form>
+    
 </body>
 </html>
